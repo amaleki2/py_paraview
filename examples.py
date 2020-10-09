@@ -34,7 +34,7 @@ file_name =  mesh_folder + 'vts_example.vts'
 read_mesh_file(file_name, rendering_option="Surface", interact=True)
 read_mesh_file(file_name, rendering_option="Surface", interact=True, colored_by=('CELLS', 'pressure'))
 plot_isosurfaces(file_name, rendering_option='Surface', interact=True)
-
+plot_clip(file_name, [0, 0, 0], [1, 1, 0], 0.5, interact=True)
 # plot an obj file.
 file_name =  mesh_folder + 'obj_example.obj'
 read_mesh_file(file_name, rendering_option="Surface With Edges", interact=True)
